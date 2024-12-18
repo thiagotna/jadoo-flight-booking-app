@@ -2,18 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-$white: #ffffff;
-$black: #212832;
-$black-2: #1a1e2a;
-$gray: #959baa;
-$gray: #6f727b;
-$gray-dark: #5e6282;
-$gray-darker: #39425d;
-$orange: #ff7f50;
-$yellow: #f1a501;
-$purple-light: #dfd7f9;
-$purple: #181e4b;
-$purple2: #14183e;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff; /* $white */
@@ -21,21 +12,14 @@ $purple2: #14183e;
   --foreground-alt: #1a1e2a; /* $black-2 */
   --primary: #ff7f50; /* $orange */
   --secondary: #f1a501; /* $yellow */
-  --gray: #959baa; /* $gray */
-  --gray-alt: #6f727b; /* $gray-2 */
+  --gray-light: #959baa; /* $gray-light */
+  --gray: #6f727b; /* $gray */
   --gray-dark: #5e6282; /* $gray-dark */
   --gray-darker: #39425d; /* $gray-darker */
   --purple-light: #dfd7f9; /* $purple-light */
   --purple: #181e4b; /* $purple */
-  --purple-dark: #14183e; /* $purple2 */
+  --purple2: #14183e; /* $purple2 */
 }
-
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     --background: #0a0a0a;
-//     --foreground: #ededed;
-//   }
-// }
 
 * {
   box-sizing: border-box;
