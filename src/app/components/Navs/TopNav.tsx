@@ -1,4 +1,4 @@
-import { NavItem } from '@/app/components/TopNav/NavItem'
+import { NavItem } from '@/app/components/Navs/NavItem'
 import RegularList from '../RegularList'
 
 const navItems = [
@@ -10,13 +10,9 @@ const navItems = [
 
 export default function TopNav() {
   return (
-    <nav>
-      <ul>
-        <RegularList
-          items={navItems}
-          resourceName="linkAndText" // prop name in NavItem
-          itemComponent={NavItem}
-        />
+    <nav className="top-nav">
+      <ul className="flex space-x-[5.5rem]">
+        <RegularList items={navItems} itemComponent={NavItem} />
       </ul>
     </nav>
   )

@@ -2,7 +2,6 @@ import { ComponentType } from 'react'
 
 interface RegularListProps<T> {
   items: T[]
-  resourceName: string
   itemComponent: ComponentType<T>
 }
 

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import '@/app/scss/index.scss'
 import Header from '@/app/components/Header'
-import TopNav from './components/TopNav'
+import TopNav from './components/Navs/TopNav'
 import Button from './components/Button'
 import Image from 'next/image'
 
@@ -32,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header className="mt-[50px]">
+        <Header className="fixed top-0 left-0 w-full pt-[50px]">
           <Image
             src="/images/logo.svg"
             alt="Jadoo"
