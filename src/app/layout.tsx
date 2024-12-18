@@ -1,21 +1,33 @@
 import type { Metadata } from 'next'
-import localFont from 'next/font/local'
+import { Open_Sans, Poppins } from 'next/font/google'
 import '@/app/scss/index.scss'
 import Header from '@/app/components/Header'
 import TopNav from './components/Navs/TopNav'
 import Button from './components/Button'
 import Image from 'next/image'
 
-const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900',
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  display: 'swap',
 })
-const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-  weight: '100 900',
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  display: 'swap',
 })
+
+// Volkhov
+
+/* const volkhov = Volkhov({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+}) */
 
 export const metadata: Metadata = {
   title: 'Jadoo',
@@ -29,10 +41,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Header className="fixed top-0 left-0 w-full pt-[50px]">
+      <body className={`${poppins.className} antialiased`}>
+        <Header
+          className={`fixed top-0 left-0 w-full pt-[50px] ${openSans.className}`}
+        >
           <Image
             src="/images/logo.svg"
             alt="Jadoo"
