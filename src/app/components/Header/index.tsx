@@ -8,8 +8,8 @@ export default function Header({
 
   return (
     <header {...props}>
-      <div className="container mx-auto max-w-[1160px]">
-        <div className="flex justify-start items-center gap-x-[222px]">
+      <div className="container mx-auto max-w-[116rem]">
+        <div className="flex justify-start items-center gap-x-[22.2rem]">
           {brand}
           <div className="flex justify-start items-center w-full">
             {nav}

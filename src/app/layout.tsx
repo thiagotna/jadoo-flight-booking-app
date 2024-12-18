@@ -44,7 +44,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>
         <Header
-          className={`fixed top-0 left-0 w-full pt-[50px] ${openSans.className}`}
+          className={`fixed top-0 left-0 w-full pt-[5rem] ${openSans.className}`}
         >
           <Image
             src="/images/logo.svg"
