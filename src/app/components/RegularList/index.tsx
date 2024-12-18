@@ -1,21 +1,22 @@
-import React from 'react'
+import { ComponentType } from 'react'
 
 interface RegularListProps<T> {
   items: T[]
   resourceName: string
-  itemComponent: React.ComponentType<{ [key: number]: T }>
+  itemComponent: ComponentType<T>
 }
 
-export const RegularList = <T,>({
+const RegularList = <T extends Record<string, unknown>>({
   items,
-  resourceName,
   itemComponent: ItemComponent,
 }: RegularListProps<T>) => {
   return (
     <>
       {items.map((item, index) => (
-        <ItemComponent key={index} {...{ [resourceName]: item }} />
+        <ItemComponent key={index} {...(item as T)} />
       ))}
     </>
   )
 }
+
+export default RegularList
