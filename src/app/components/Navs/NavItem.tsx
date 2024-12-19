@@ -1,12 +1,12 @@
 import Link from 'next/link'
 
-interface LinkAndText {
+interface NavItemProps {
   href: string
   linkText: string
 }
 
-export function NavItem(linkAndText: LinkAndText): JSX.Element {
-  const { href, linkText } = linkAndText
+export function NavItem(navItemProps: NavItemProps): JSX.Element {
+  const { href, linkText } = navItemProps
   return (
     <li>
       <Link href={href}>{linkText}</Link>

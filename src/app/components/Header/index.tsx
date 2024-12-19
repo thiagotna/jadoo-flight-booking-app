@@ -11,7 +11,7 @@ export default function Header({
       <div className="container mx-auto max-w-[116rem]">
         <div className="flex justify-start items-center gap-x-[22.2rem]">
           {brand}
-          <div className="flex justify-start items-center w-full">
+          <div className="flex justify-end items-center w-full">
             {nav}
             {signIn}
           </div>

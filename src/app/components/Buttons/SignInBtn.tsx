@@ -1,8 +1,8 @@
-import PartiallyApplied from '@/app/components/PartiallyApplied'
-import Button from './Button'
+import Link from 'next/link'
 
 const classNames = `
   ml-[5.2rem]
+  mr-[4.2rem]
   bg-transparent
   px-[2.2rem]
   py-[.9rem]
@@ -14,6 +14,10 @@ const classNames = `
   ease-in-out
 `
 
-const SignInBtn = PartiallyApplied(Button, { classNames, text: 'Sign In' })
-
-export default SignInBtn
+export default function SignInBtn() {
+  return (
+    <Link className={classNames} href="/signin">
+      Sign In
+    </Link>
+  )
+}

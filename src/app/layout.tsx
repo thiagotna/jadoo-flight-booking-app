@@ -3,9 +3,9 @@ import { Open_Sans, Poppins } from 'next/font/google'
 import '@/app/scss/index.scss'
 import Header from '@/app/components/Header'
 import TopNav from './components/Navs/TopNav'
-
 import Image from 'next/image'
 import SignInBtn from './components/Buttons/SignInBtn'
+// import SignInBtn from './components/Buttons/SignInBtn'
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -55,7 +55,17 @@ export default function RootLayout({
             loading="eager"
           />
           <TopNav />
-          <SignInBtn />
+          <>
+            <SignInBtn />
+            <select
+              className="bg-transparent max-w-[3.85rem]"
+              name="language"
+              id="language"
+            >
+              <option value="en">EN</option>
+              <option value="pt">PT-BR</option>
+            </select>
+          </>
         </Header>
         {children}
       </body>
