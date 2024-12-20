@@ -15,7 +15,7 @@ export function Hero(): JSX.Element {
       bg-no-repeat
       bg-right-top
       bg-[length:40.5%]"
-      containerWidth="max-w-[120rem]"
+      containerClasses="container mx-auto max-w-[120rem]"
     >
       <div className="flex flex-row items-center justify-center relative">
         <div className="columns-[64.5rem] pt-[11.2rem] pl-[1.7rem]">
