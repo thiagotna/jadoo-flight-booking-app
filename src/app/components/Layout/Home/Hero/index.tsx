@@ -23,8 +23,8 @@ export function Hero(): JSX.Element {
       bg-[length:40.5%]"
       containerWidth="max-w-[120rem]"
     >
-      <div className="flex flex-row items-center justify-center">
-        <div className="columns-[64.5rem] pl-[1.7rem]">
+      <div className="flex flex-row items-center justify-center relative">
+        <div className="columns-[64.5rem] pt-[11.2rem] pl-[1.7rem]">
           <h3 className="text-primary uppercase font-bold text-[2rem] mb-[2.4rem]">
             Best Destinations around the world
           </h3>
@@ -44,9 +44,10 @@ export function Hero(): JSX.Element {
             <HeroPlayBtn />
           </div>
         </div>
-        <div>
+        <div className="columns-[55.5rem]">
           <Image
             src="/images/traveler.png"
+            className="absolute top-[0] right-[0]"
             width={756}
             height={764}
             alt="Fun Traveler getting ready to travel"
