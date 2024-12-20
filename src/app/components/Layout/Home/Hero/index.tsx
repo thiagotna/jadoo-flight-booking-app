@@ -1,20 +1,14 @@
-import { Volkhov } from 'next/font/google'
 import { Section } from '@/app/components/Section'
+import volkhov from '@/app/fonts/volkhov'
 import HeroCta from '@/app/components/Buttons/HeroCta'
 import Image from 'next/image'
 import HeroPlayBtn from '@/app/components/Buttons/HeroPlayBtn'
-
-const volkhov = Volkhov({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  display: 'swap',
-})
 
 export function Hero(): JSX.Element {
   return (
     <Section
       sectionClasses="
+      hero-section
       pt-[11.35rem]       
       pb-[9.7rem] 
       bg-[url('/images/hero-bg.png')]

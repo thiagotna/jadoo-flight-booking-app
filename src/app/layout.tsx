@@ -1,25 +1,11 @@
 import type { Metadata } from 'next'
-import { Open_Sans, Poppins } from 'next/font/google'
+import openSans from '@/app/fonts/openSans'
+import poppins from '@/app/fonts/poppins'
 import '@/app/scss/index.scss'
 import Header from '@/app/components/Header'
 import TopNav from './components/Navs/TopNav'
 import Image from 'next/image'
 import SignInBtn from './components/Buttons/SignInBtn'
-// import SignInBtn from './components/Buttons/SignInBtn'
-
-const openSans = Open_Sans({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  display: 'swap',
-})
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   title: 'Jadoo',
