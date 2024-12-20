@@ -1,0 +1,12 @@
+.hero-play-btn {
+  svg {
+    box-shadow: 0px 15px 30px 0px rgba(223, 105, 81, 0.3);
+    transition: 0.3s ease-in-out box-shadow;
+  }
+  &:hover svg {
+    box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+    circle {
+      fill: var(--secondary);
+    }
+  }
+}

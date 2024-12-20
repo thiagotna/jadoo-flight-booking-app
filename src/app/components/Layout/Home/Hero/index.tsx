@@ -2,6 +2,7 @@ import { Volkhov } from 'next/font/google'
 import { Section } from '@/app/components/Section'
 import HeroCta from '@/app/components/Buttons/HeroCta'
 import Image from 'next/image'
+import HeroPlayBtn from '@/app/components/Buttons/HeroPlayBtn'
 
 const volkhov = Volkhov({
   subsets: ['latin'],
@@ -38,8 +39,9 @@ export function Hero(): JSX.Element {
             Preferred to sportsmen it engrossed listening. Park gate <br /> sell
             they west hard for the.
           </p>
-          <div className="flex flex-row items-center justify-start">
+          <div className="flex flex-row items-center justify-start gap-[4.4rem]">
             <HeroCta />
+            <HeroPlayBtn />
           </div>
         </div>
         <div>
