@@ -21,15 +21,6 @@ const poppins = Poppins({
   display: 'swap',
 })
 
-// Volkhov
-
-/* const volkhov = Volkhov({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  display: 'swap',
-}) */
-
 export const metadata: Metadata = {
   title: 'Jadoo',
   description: 'Best Destinations around the world',

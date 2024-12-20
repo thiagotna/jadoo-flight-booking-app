@@ -1,5 +1,3 @@
-import React from 'react'
-
 const PartiallyApplied = <P extends object>(
   Component: React.ComponentType<P>,
   partialProps: Partial<P>,

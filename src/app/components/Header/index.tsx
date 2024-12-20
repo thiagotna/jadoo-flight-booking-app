@@ -8,7 +8,7 @@ export default function Header({
 
   return (
     <header {...props}>
-      <div className="container mx-auto max-w-[116rem]">
+      <div className="container mx-auto max-w-[116.58rem] z-40">
         <div className="flex justify-start items-center gap-x-[22.2rem]">
           {brand}
           <div className="flex justify-end items-center w-full">

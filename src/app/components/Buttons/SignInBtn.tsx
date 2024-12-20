@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import PartiallyApplied from '@/app/components/PartiallyApplied'
+import Button from './Button'
 
 const classNames = `
   ml-[5.2rem]
@@ -14,10 +16,12 @@ const classNames = `
   ease-in-out
 `
 
+const SignIn = PartiallyApplied(Button, { classNames, text: 'Sign In' })
+
 export default function SignInBtn() {
   return (
-    <Link className={classNames} href="/signin">
-      Sign In
+    <Link href="/signin">
+      <SignIn />
     </Link>
   )
 }
