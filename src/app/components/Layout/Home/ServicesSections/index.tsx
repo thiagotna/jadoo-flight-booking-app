@@ -6,8 +6,8 @@ import volkhov from '@/app/fonts/volkhov'
 export function ServicesSection(): JSX.Element {
   return (
     <Section
-      sectionClasses="mt-[9.7rem] pb-[6.1rem]"
-      containerClasses="container mx-auto max-w-[1200px] bg-[url('/images/section-decorator.svg')] bg-contain bg-no-repeat bg-right-top bg-[length:15.3rem]"
+      sectionClasses="services-section mt-[9.7rem] pb-[6.1rem]"
+      containerClasses="container mx-auto m-w-[122.8rem] bg-contain bg-no-repeat bg-[right_-6.3rem_top] bg-[length:153px]"
     >
       <h2
         className={`${volkhov.className} mb-[11rem] pt-[1rem] text-center text-[5rem] font-[600]`}

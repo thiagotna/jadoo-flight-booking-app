@@ -35,7 +35,7 @@ const serviceCardItems = [
 export default function ServicesNav() {
   return (
     <nav className="services-nav">
-      <ul className="flex space-x-[5.5rem] gap-x-[7.1rem]">
+      <ul className="flex justify-center items-start gap-x-[5.5rem]">
         <RegularList
           items={serviceCardItems}
           itemComponent={ServiceCategoryCard}

@@ -1,0 +1,18 @@
+.services-section {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 144rem;
+    background-image: url('/images/section-decorator.svg');
+    background-size: 15.3rem;
+    background-repeat: no-repeat;
+    background-position: right 6.3rem top;
+    transform: translateX(-50%);
+  }
+}
