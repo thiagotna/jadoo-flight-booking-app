@@ -1,5 +1,5 @@
 import { NavItem } from '@/app/components/Navs/NavItem'
-import RegularList from '../RegularList'
+import RegularList from '@/app/components/RegularList'
 
 const navItems = [
   { href: '/destinations', linkText: 'Destinations' },
